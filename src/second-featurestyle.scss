@@ -1,0 +1,43 @@
+.sfList {
+  width: 100%;
+  max-width: 1024px;
+  height: 25vh;
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  .sfListItem {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    .sfListImg {
+      width: 100%;
+      height: 85%;
+      object-fit: cover;
+    }
+
+    .sfListTitles > h1 {
+      font-size: 1.2vw;
+      color: #444;
+      @media (max-width: 480px) {
+        font-size: 3vw;
+      }
+      @media (max-width: 768px) and (min-width: 481px) {
+        font-size: 2.5vw;
+      }
+      @media (max-width: 1023px) and (min-width: 769px) {
+        font-size: 2.5vw;
+      }
+    }
+  }
+  #sflast1 {
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+  #sflast2 {
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+}
